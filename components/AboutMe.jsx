@@ -17,11 +17,51 @@ const AboutMe = () => {
           </div>
           <div className="h-[614px] flex">
             <div className="w-1/2 flex flex-col">
-              <div className="h-96">
-                <div className="h-16 pt-5">
-                  <span className="py-1 px-4 bg-darkgray-300 rounded-t-lg leading-none">
+              <div className="h-96 flex flex-col">
+                <div className="h-16 flex items-end">
+                  <span className="py-2 px-4 bg-darkgray-300 rounded-t-lg leading-none ml-5 mb-0">
                     index.html
                   </span>
+                  <span className="py-2 px-4 rounded-t-lg leading-none ml-5 mb-0">
+                    script.js
+                  </span>
+                  <span className="py-2 px-4 rounded-t-lg leading-none ml-5 mb-0">
+                    package.json
+                  </span>
+                </div>
+                <div className="flex-1 w-full flex bg-darkgray-300">
+                  <div className=" w-9 h-full flex flex-col items-end text-gray-500">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-1 flex flex-col gap-4 p-2 pl-6">
+                <div className="flex gap-5 text-gray-600">
+                  <span className="text-white">Terminal</span>
+                  <span>Output</span>
+                  <span>Debug Console</span>
+                  <span>Problems</span>
+                </div>
+                <div className="flex flex-col">
+                  <span>Compiled in 160ms  (1236 modules)</span>
+                  <span>Compiled in 150ms  (1236 modules)</span>
+                  <span>Compiled in 134ms  (1236 modules)</span>
+                  <span>Compiled in 170ms  (1236 modules)</span>
+                  <span>Compiled in 165ms  (1236 modules)</span>
+                  <span>Compiled in 145ms  (1236 modules)</span>
+                  <span>Compiled in 160ms  (1236 modules)</span>
                 </div>
               </div>
             </div>
