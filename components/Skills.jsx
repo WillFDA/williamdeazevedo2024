@@ -1,4 +1,4 @@
-import React from "react";
+import IconsSlider from "./IconsSlider";
 
 const Skills = () => {
   return (
@@ -8,7 +8,10 @@ const Skills = () => {
         Technologies et logiciels que j’ai pu utiliser lors de mes stages et
         étude
       </p>
-      <div className="flex gap-8 justify-center mt-12 flex-wrap">
+      <div className="mt-36 flex flex-col gap-8">
+        <IconsSlider />
+      </div>
+      <div className="flex gap-8 justify-center mt-36 flex-wrap">
         <div className="pill bg-black/20 border-white/60">NextJS</div>
         <div className="pill bg-orange-600/5 border-orange-600/60">HTML</div>
         <div className="pill bg-green-600/5 border-green-600/60">CSS</div>

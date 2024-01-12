@@ -46,3 +46,102 @@ body {
 .pill {
   @apply px-4 py-1 text-lg border rounded-full leading-none;
 }
+
+.pl-ent {
+  color: #7ee787;
+}
+.pl-e,
+.pl-en {
+  color: #d2a8ff;
+}
+.pl-s {
+  color: #a5d6ff;
+}
+.pl-s1 {
+  color: #fff;
+}
+.pl-k {
+  color: #ff7b72;
+}
+
+.pl-c1 {
+  color: #79c0ff;
+}
+
+.pl-o {
+  color: #ef9e52;
+}
+
+.slider-item {
+  width: 128px;
+  height: 128px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply bg-darkgray-200 shadow-md;
+}
+
+.slider {
+  height: 128px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+  background: rgb(15, 17, 21);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 17, 21, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 10%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: -1px;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slide-track {
+  display: flex;
+  width: 100%;
+  gap: 128px;
+  animation: scroll 40s linear infinite;
+}
+
+.slider-track-2 {
+  display: flex;
+  width: 100%;
+  gap: 128px;
+  animation: scroll 40s linear infinite;
+  animation-direction: reverse;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-128px * 5));
+  }
+}
