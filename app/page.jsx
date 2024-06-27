@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Hero from "@/components/Hero";
+import MesProjets from "@/components/MesProjets";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import Image from "next/image";
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <AboutMe />
+      <MesProjets />
     </>
   );
 }

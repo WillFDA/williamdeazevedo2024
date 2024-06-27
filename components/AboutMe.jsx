@@ -1,13 +1,17 @@
 import Image from "next/image";
 import CodeBlock from "./CodeBlock";
-
+import Reveal from "./Reveal";
 const AboutMe = () => {
   return (
     <section className="max-container px-8 mt-36">
-      <h2 className="text-4xl font-bold mb-4">A propos de moi</h2>
-      <p className="text-xl text-gray-400">
-        Qui je suis, d'ou je viens et vers ou je vais !
-      </p>
+      <Reveal>
+        <h2 className="text-4xl font-bold mb-4">A propos de moi</h2>
+      </Reveal>
+      <Reveal>
+        <p className="text-xl text-gray-400">
+          Qui je suis, d'ou je viens et vers ou je vais !
+        </p>
+      </Reveal>
       <div className="flex justify-center mt-20 mb-36">
         <div className="flex flex-col w-full bg-darkgray-200 border border-darkgray-100 rounded-2xl">
           <div className="h-16 flex justify-center items-center border-b border-darkgray-100">
@@ -100,51 +104,19 @@ const AboutMe = () => {
                   }}
                 />
               </div>
-              <div className="flex-1 bg-darkgray-300 flex justify-center items-center">
-                <Image
-                  src="/picture.png"
-                  width={400}
-                  height={400}
-                  alt="Picture of myself"
-                />
+              <div className="flex-1 flex justify-center items-center">
+                <Reveal>
+                  <Image
+                    src="/picture.png"
+                    width={400}
+                    height={400}
+                    alt="Picture of myself"
+                  />
+                </Reveal>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center mx-auto gap-8 mb-12">
-        <h3 className="text-2xl font-normal mb-4 cursor-pointer">
-          Mes Expériences
-        </h3>
-        <h3 className="text-2xl font-normal mb-4 text-gray-600 hover:text-white cursor-pointer">
-          Mes Etudes
-        </h3>
-      </div>
-      <ul className="h-12 flex rounded-full bg-darkgray-200 w-2/3 mx-auto p-1">
-        <li className="flex-1 flex-shrink-0 rounded-full h-full flex justify-center items-center hover:text-white bg-[#0f1115]">
-          2023
-        </li>
-        <li className="flex-1 flex-shrink-0 rounded-full h-full flex justify-center items-center text-darkgray-100 hover:text-white">
-          2020
-        </li>
-        <li className="flex-1 flex-shrink-0 rounded-full h-full flex justify-center items-center text-darkgray-100 hover:text-white">
-          2018
-        </li>
-        <li className="flex-1 flex-shrink-0 rounded-full h-full flex justify-center items-center text-darkgray-100 hover:text-white">
-          2016
-        </li>
-      </ul>
-      <div className="h-fit w-2/3 bg-darkgray-200 mt-8 p-4 rounded-2xl mx-auto flex flex-col ">
-        <span className="text-lg text-white mb-4">Freelance</span>
-        <p className=" text-md text-gray-400 leading-6">
-          Réalisation de Maquettes: Conception et réalisation de maquettes pour
-          divers projets, y compris des sites web et des matériaux imprimés, en
-          utilisant des outils de design pour visualiser et affiner les concepts
-          avant la production. <br /> <br /> Gestion de Projet: Gestion autonome
-          de tous les aspects des projets, de l'initialisation à la livraison
-          finale, tout en maintenant une communication constante avec les
-          clients pour assurer leur satisfaction.
-        </p>
       </div>
     </section>
   );

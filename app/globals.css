@@ -44,7 +44,7 @@ body {
 }
 
 .pill {
-  @apply px-4 py-1 text-lg border rounded-full leading-none;
+  @apply px-4 py-1 text-lg border rounded-full leading-none list-none;
 }
 
 .pl-ent {
@@ -144,4 +144,8 @@ body {
   100% {
     transform: translateX(calc(-128px * 5));
   }
+}
+
+body {
+  min-height: 200vh;
 }
