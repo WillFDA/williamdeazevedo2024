@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from "./Reveal";
+import Reveal from "../../components/Reveal";
 const MesProjets = () => {
   return (
     <section className="max-container px-8 mt-36">
