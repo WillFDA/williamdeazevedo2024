@@ -57,7 +57,13 @@ const Hero = () => {
       className="max-container h-screen"
     >
       <motion.div
-        style={{ scale: scale, x: "50%", y: "40%", position: position }}
+        style={{
+          scale: scale,
+          x: "50%",
+          y: "40%",
+          position: position,
+          filter: useTransform(blur, (value) => `blur(${value}px)`),
+        }}
         className="fixed bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2 pb-12"
       >
         <Logo delay="0.2" />

@@ -16,7 +16,7 @@ const AboutMe = () => {
   const imageBlur = useTransform(scrollYProgress, [0, 0.3], [0, 10]);
   const textY = useTransform(scrollYProgress, [0, 1], ["100%", "-100%"]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
-
+  const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
   return (
     <section ref={targetRef} className="max-container mt-[-20vh]">
       <div className="h-[300vh] w-full">
@@ -125,7 +125,11 @@ const AboutMe = () => {
                     <motion.div
                       style={{
                         y: imageY,
-                        filter: `blur(${imageBlur.get()}px)`,
+                        filter: useTransform(
+                          imageBlur,
+                          (value) => `blur(${value}px)`
+                        ),
+                        opacity: opacity,
                       }}
                       className="absolute inset-0 flex justify-center items-center"
                     >
@@ -138,28 +142,26 @@ const AboutMe = () => {
                     </motion.div>
                     <motion.div
                       style={{ y: textY, opacity: textOpacity }}
-                      className="absolute inset-0 flex flex-col justify-start items-center text-center px-8 space-y-4"
+                      className="absolute inset-0 flex flex-col justify-start items-center text-left px-8 space-y-4 overflow-y-auto"
                     >
                       <h3 className="text-2xl font-bold mb-2">Mon histoire</h3>
 
-                      <div className="text-left space-y-4">
+                      <div className="space-y-4">
                         <p className="text-lg">
                           Passionné par l'informatique et la créativité visuelle
                           depuis mon jeune âge, j'ai commencé à explorer
                           l'univers de l'infographie à seulement 11 ans.
                         </p>
 
-                        <p className="text-lg">
-                          Mon voyage a débuté par :
-                          <ul className="list-disc list-inside ml-4 mt-2">
-                            <li>La modélisation 3D</li>
-                            <li>Le montage vidéo</li>
-                            <li>
-                              Le traitement d'image pour créer des affiches et
-                              d'autres matériaux graphiques
-                            </li>
-                          </ul>
-                        </p>
+                        <p className="text-lg">Mon voyage a débuté par :</p>
+                        <ul className="list-disc list-inside ml-4 mt-2">
+                          <li>La modélisation 3D</li>
+                          <li>Le montage vidéo</li>
+                          <li>
+                            Le traitement d'image pour créer des affiches et
+                            d'autres matériaux graphiques
+                          </li>
+                        </ul>
 
                         <p className="text-lg">
                           J'ai ensuite approfondi mes connaissances en
