@@ -30,7 +30,7 @@ const AboutMe = () => {
             </p>
           </Reveal>
           <div className="flex justify-center mt-20 mb-36">
-            <div className="flex flex-col w-full bg-darkgray-200 border border-darkgray-100 rounded-2xl">
+            <div className="flex flex-col w-full bg-darkgray-200 shadow-lg border border-darkgray-100 rounded-2xl">
               <div className="h-16 flex justify-center items-center border-b border-darkgray-100">
                 <div className="bg-darkgray-300 w-96 h-6 flex justify-center items-center rounded border border-darkgray-100 relative">
                   <span className="text-xs">william-portfolio-picture.dev</span>

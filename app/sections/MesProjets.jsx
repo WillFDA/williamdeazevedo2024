@@ -1,7 +1,8 @@
 import React from "react";
 import Reveal from "../../components/Reveal";
+import TitreProjets from "@/components/TitreProjets";
 const MesProjets = () => {
-  const dataProjects = [
+  const data = [
     {
       title: "Kasa App - Site d'Agence Immobilière",
       description:
@@ -61,6 +62,22 @@ const MesProjets = () => {
           Voici quelques projets sur lesquels j'ai travaillé, et mes experiences
         </p>
       </Reveal>
+      <div className="flex w-full gap-20 items-start">
+        <div className="w-full py-[50vh]">
+          <ul>
+            {data.map((project) => {
+              return (
+                <li key={project.id}>
+                  <TitreProjets>{project.title}</TitreProjets>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="w-full sticky top-0 h-screen flex items-center">
+          <div className="w-full bg-gray-200 aspect-video"></div>
+        </div>
+      </div>
     </section>
   );
 };
