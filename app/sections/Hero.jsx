@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Logo from "../../components/Logo";
-
+import AnimationHeroH1 from "../../components/AnimationHeroH1";
 const Hero = () => {
   const targetRef = useRef();
   const { scrollYProgress } = useScroll({
@@ -15,46 +15,11 @@ const Hero = () => {
   const position = useTransform(scrollYProgress, (pos) => {
     return pos === 1 ? "relative" : "fixed";
   });
-
-  const titleLines = [
-    ["Salut, moi c'est"],
-    ["William De Azevedo"],
-    ["Développeur Front end"],
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0.2,
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const wordVariants = {
-    hidden: {
-      opacity: 0,
-      y: -20,
-      filter: "blur(8px)",
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      filter: "blur(0px)",
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
     <motion.section
       style={{ opacity: opacity }}
       ref={targetRef}
-      className="max-container h-screen"
+      className="max-container md:px-0 px-4 h-screen"
     >
       <motion.div
         style={{
@@ -64,32 +29,27 @@ const Hero = () => {
           position: position,
           filter: useTransform(blur, (value) => `blur(${value}px)`),
         }}
-        className="fixed bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2 pb-12"
+        className="fixed bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2 pb-12 w-full"
       >
         <Logo delay="0.2" />
-        <motion.h1
-          className="bold-90 text-center"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {titleLines.map((line, lineIndex) => (
-            <div
-              key={lineIndex}
-              className={lineIndex === 1 ? "text-main-200" : ""}
-            >
-              {line[0].split(" ").map((word, wordIndex) => (
-                <motion.span
-                  key={`${lineIndex}-${wordIndex}`}
-                  variants={wordVariants}
-                  className="inline-block mr-4"
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </div>
-          ))}
-        </motion.h1>
+        <AnimationHeroH1
+          text="Salut, moi c'est "
+          delay={0.15}
+          startDelay={0.2}
+          nameclass="text-white mt-4"
+        />
+        <AnimationHeroH1
+          text="William De Azevedo"
+          delay={0.15}
+          startDelay={0.3}
+          nameclass="text-main-200"
+        />
+        <AnimationHeroH1
+          text="Développeur Front end"
+          delay={0.15}
+          startDelay={0.5}
+          nameclass="text-white"
+        />
         <p className="text-center mt-12 text-xl">
           Autodidacte de 25 ans, je suis passioné par le développement <br />{" "}
           web, le design et l'accessibilité depuis mes 16 ans

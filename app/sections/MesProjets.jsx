@@ -1,6 +1,5 @@
 import React from "react";
 import Reveal from "../../components/Reveal";
-import TitreProjets from "@/components/TitreProjets";
 const MesProjets = () => {
   const data = [
     {
@@ -10,7 +9,7 @@ const MesProjets = () => {
       image: "/kasa_app.png",
       tags: ["React", "SCSS", "React Router"],
       links: {
-        external: "https://willfda.github.io/kasa_app/",
+        externalLink: "https://willfda.github.io/kasa_app/",
         github: "https://github.com/WillFDA/kasa_app",
       },
       id: "kasa_app",
@@ -22,8 +21,8 @@ const MesProjets = () => {
       image: "/petits_plats.png",
       tags: ["JavaScript", "TailwindCSS"],
       links: {
-        external: "https://willfda.github.io/kasa_app/",
-        github: "https://github.com/WillFDA/kasa_app",
+        externalLink: "https://willfda.github.io/petits_plats/",
+        github: "https://github.com/WillFDA/petits_plats",
       },
       id: "petits_plats",
     },
@@ -34,8 +33,8 @@ const MesProjets = () => {
       image: "/single_page_portfolio.png",
       tags: ["NextJS", "TailwindCSS", "SwiperJS"],
       links: {
-        external: "https://willfda.github.io/kasa_app/",
-        github: "https://github.com/WillFDA/kasa_app",
+        externalLink: "https://willfda.github.io/single_page_portfolio/",
+        github: "https://github.com/WillFDA/single_page_portfolio",
       },
       id: "single_portfolio",
     },
@@ -46,40 +45,13 @@ const MesProjets = () => {
       image: "/old_portfolio.png",
       tags: ["NextJS", "TailwindCSS", "Framer-motion", "TypeScript"],
       links: {
-        external: "https://willfda.github.io/kasa_app/",
-        github: "https://github.com/WillFDA/kasa_app",
+        externalLink: "https://willfda.github.io/old_portfolio/",
+        github: "https://github.com/WillFDA/old_portfolio",
       },
       id: "old_portfolio",
     },
   ];
-  return (
-    <section className="max-container px-8 mt-36">
-      <Reveal>
-        <h2 className="text-4xl font-bold mb-4">Mes experiences et projets</h2>
-      </Reveal>
-      <Reveal>
-        <p className="text-xl text-gray-400">
-          Voici quelques projets sur lesquels j'ai travaillé, et mes experiences
-        </p>
-      </Reveal>
-      <div className="flex w-full gap-20 items-start">
-        <div className="w-full py-[50vh]">
-          <ul>
-            {data.map((project) => {
-              return (
-                <li key={project.id}>
-                  <TitreProjets>{project.title}</TitreProjets>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="w-full sticky top-0 h-screen flex items-center">
-          <div className="w-full bg-gray-200 aspect-video"></div>
-        </div>
-      </div>
-    </section>
-  );
+  return <></>;
 };
 
 export default MesProjets;
