@@ -1,9 +1,9 @@
-import AnimatedPills from "./AnimatedPills";
-import IconsSlider from "./IconsSlider";
-import Reveal from "./Reveal";
+import AnimatedPills from "../../components/AnimatedPills";
+import IconsSlider from "../../components/IconsSlider";
+import Reveal from "../../components/Reveal";
 const Skills = () => {
   return (
-    <section className="max-container px-8 mb-36">
+    <section className="max-container px-8 my-36">
       <Reveal>
         <h2 className="text-4xl font-bold mb-4">Mes compétences</h2>
       </Reveal>
