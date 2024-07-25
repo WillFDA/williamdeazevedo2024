@@ -93,15 +93,15 @@ const IconsSlider = () => {
         <div className="slider-track-2">
           <div className="slider-item">
             <Image
-              src="/Ruby_On_Rails_Logo.png"
+              src="/react-router-logo.png"
               width={80}
               height={50}
-              alt="Ruby on Rails Logo icon"
+              alt="React Router Logo icon"
             />
           </div>
           <div className="slider-item">
             <Image
-              src="/docker-logo.png"
+              src="/react-query-logo.png"
               width={80}
               height={70}
               alt="Ruby Logo icon"
@@ -125,15 +125,15 @@ const IconsSlider = () => {
           </div>
           <div className="slider-item">
             <Image
-              src="/Ruby_On_Rails_Logo.png"
+              src="/react-router-logo.png"
               width={80}
               height={50}
-              alt="Ruby on Rails Logo icon"
+              alt="React Router Logo icon"
             />
           </div>
           <div className="slider-item">
             <Image
-              src="/docker-logo.png"
+              src="/react-query-logo.png"
               width={80}
               height={70}
               alt="Ruby Logo icon"

@@ -18,9 +18,9 @@ const AboutMe = () => {
   const textOpacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
   const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
   return (
-    <section ref={targetRef} className="max-container mt-[-20vh]">
+    <section ref={targetRef} className="lg:mt-[-20vh] mt-[-30vh]">
       <div className="h-[300vh] w-full">
-        <div className="sticky top-[10vh] overflow-hidden px-8">
+        <div className="sticky lg:top-[10vh] top-[5vh] overflow-hidden max-container px-4 md:px-8">
           <Reveal>
             <h2 className="text-4xl font-bold mb-4">A propos de moi</h2>
           </Reveal>
@@ -29,10 +29,10 @@ const AboutMe = () => {
               Qui je suis, d'ou je viens et vers ou je vais !
             </p>
           </Reveal>
-          <div className="flex justify-center mt-20 mb-36">
+          <div className="flex justify-center lg:mt-20 lg:mb-36 mt-10">
             <div className="flex flex-col w-full bg-darkgray-200 shadow-lg border border-darkgray-100 rounded-2xl">
-              <div className="h-16 flex justify-center items-center border-b border-darkgray-100">
-                <div className="bg-darkgray-300 w-96 h-6 flex justify-center items-center rounded border border-darkgray-100 relative">
+              <div className="h-16 flex justify-center items-center border-b border-darkgray-100 md:px-0 px-4">
+                <div className="bg-darkgray-300 w-full sm:w-96 h-6 flex justify-center items-center rounded border border-darkgray-100 relative">
                   <span className="text-xs">william-portfolio-picture.dev</span>
                   <Image
                     src="/Arrows_Reload.svg"
@@ -49,7 +49,7 @@ const AboutMe = () => {
                   />
                 </div>
               </div>
-              <div className="h-[614px] flex">
+              <div className="h-[614px] flex ">
                 <div className="w-1/2 lg:flex flex-col hidden">
                   <div className="h-96 flex flex-col">
                     <div className="h-16 flex items-end gap-2">
@@ -100,7 +100,7 @@ const AboutMe = () => {
                     </div>
                   </div>
                 </div>
-                <div className="lg:w-1/2 w-full flex flex-col border-l border-darkgray-100">
+                <div className="lg:w-1/2 w-full flex flex-col lg:border-l lg:border-darkgray-100">
                   <div className="h-16 border-b border-darkgray-100 flex justify-center relative">
                     <Image
                       src="/Logo.svg"
@@ -142,7 +142,7 @@ const AboutMe = () => {
                     </motion.div>
                     <motion.div
                       style={{ y: textY, opacity: textOpacity }}
-                      className="absolute inset-0 flex flex-col justify-start items-center text-left px-8 space-y-4 overflow-y-auto"
+                      className="absolute inset-0 flex flex-col justify-start items-center text-left px-8 space-y-4 h-full"
                     >
                       <h3 className="text-2xl font-bold mb-2">Mon histoire</h3>
 

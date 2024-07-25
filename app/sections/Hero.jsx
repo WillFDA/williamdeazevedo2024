@@ -19,7 +19,7 @@ const Hero = () => {
     <motion.section
       style={{ opacity: opacity }}
       ref={targetRef}
-      className="max-container md:px-0 px-4 h-screen"
+      className="h-screen"
     >
       <motion.div
         style={{
@@ -29,24 +29,24 @@ const Hero = () => {
           position: position,
           filter: useTransform(blur, (value) => `blur(${value}px)`),
         }}
-        className="fixed bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2 pb-12 w-full"
+        className="fixed lg:bottom-1/2 lg:translate-y-1/2 right-1/2 translate-x-1/2 lg:pb-12 w-full max-container md:px-0 px-4"
       >
         <Logo delay="0.2" />
         <AnimationHeroH1
           text="Salut, moi c'est "
           delay={0.15}
           startDelay={0.2}
-          nameclass="text-white mt-4"
+          nameclass="text-white md:mt-4 mt-12"
         />
         <AnimationHeroH1
           text="William De Azevedo"
-          delay={0.15}
+          delay={0.25}
           startDelay={0.3}
           nameclass="text-main-200"
         />
         <AnimationHeroH1
           text="Développeur Front end"
-          delay={0.15}
+          delay={0.3}
           startDelay={0.5}
           nameclass="text-white"
         />
