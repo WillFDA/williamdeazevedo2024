@@ -1,5 +1,7 @@
 import React from "react";
 import Reveal from "../../components/Reveal";
+import Image from "next/image";
+import Link from "next/link";
 const MesProjets = () => {
   const data = [
     {
@@ -51,7 +53,53 @@ const MesProjets = () => {
       id: "old_portfolio",
     },
   ];
-  return <></>;
+
+  return (
+    <section className="max-container px-4 sm:px-8 my-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-4">
+        {data.map((project) => {
+          return (
+            <Link
+              key={project.id}
+              href={project.links.externalLink}
+              className="focus group cursor-pointer border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 shadow-sm hover:-translate-y-1 focus:-translate-y-1"
+            >
+              <div className="w-full pb-[66%] bg-gray-100 relative border-b overflow-hidden">
+                <Image
+                  src={project.image}
+                  fill={true}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  alt={`Image ${project.title}`}
+                />
+              </div>
+              <div className="flex flex-1 flex-col justify-between">
+                <div className="p-4 pb-0">
+                  <h3 className="font-bold text-lg">{project.title}</h3>
+                  <p className="text-sm mt-3 text-gray-400">
+                    {project.description}
+                  </p>
+                </div>
+                <div className="flex p-4 flex-wrap gap-4 text-sm">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-white text-darkgray-100 px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
 };
 
 export default MesProjets;

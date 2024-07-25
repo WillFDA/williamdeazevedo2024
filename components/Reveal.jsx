@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 const Reveal = ({ children }, width = false) => {
   const ref = useRef();
@@ -16,7 +16,9 @@ const Reveal = ({ children }, width = false) => {
   return (
     <div
       ref={ref}
-      className={`relative overflow-hidden ${width ? "w-fit" : "w-full"}`}
+      className={`relative overflow-hidden h-full ${
+        width ? "w-fit" : "w-full"
+      }`}
     >
       <motion.div
         variants={{
@@ -26,6 +28,7 @@ const Reveal = ({ children }, width = false) => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
+        className="h-full"
       >
         {children}
       </motion.div>

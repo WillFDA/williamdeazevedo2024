@@ -51,7 +51,7 @@ const AboutMe = () => {
               </div>
               <div className="2xl:h-[614px] h-[500px] flex ">
                 <div className="w-1/2 lg:flex flex-col hidden">
-                  <div className="2xl:h-96 h-full flex flex-col rounded-bl-2xl overflow-hidden 2xl:rounded-none">
+                  <div className="2xl:h-96 h-full flex flex-col overflow-hidden 2xl:rounded-none">
                     <div className="h-16 flex items-end gap-2">
                       <span className="py-2 px-4 bg-darkgray-300 rounded-t-lg leading-none ml-5 mb-0 cursor-pointer">
                         index.html
@@ -82,7 +82,7 @@ const AboutMe = () => {
                       <CodeBlock />
                     </div>
                   </div>
-                  <div className="flex-1 2xl:flex flex-col gap-4 p-2 pl-6 hidden">
+                  <div className="flex-1 flex flex-col gap-4 p-2 pl-6">
                     <ul className="flex gap-5 text-gray-600">
                       <li className="text-white">Terminal</li>
                       <li>Output</li>
