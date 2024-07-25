@@ -12,9 +12,13 @@
 
 .logo {
   margin: auto;
-  width: 4rem;
+  width: 3rem;
 }
-
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 4rem;
+  }
+}
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #0f1115;
@@ -74,8 +78,8 @@ body {
 }
 
 .slider-item {
-  width: 128px;
-  height: 128px;
+  width: 96px;
+  height: 96px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -119,19 +123,33 @@ body {
   transform: rotateZ(180deg);
 }
 
-.slide-track {
+.slider-track {
   display: flex;
   width: 100%;
-  gap: 128px;
+  gap: 56px;
   animation: scroll 40s linear infinite;
 }
 
 .slider-track-2 {
   display: flex;
   width: 100%;
-  gap: 128px;
+  gap: 56px;
   animation: scroll 40s linear infinite;
   animation-direction: reverse;
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-item {
+    width: 128px;
+    height: 128px;
+  }
+  .slider-track {
+    gap: 128px;
+  }
+
+  .slider-track-2 {
+    gap: 128px;
+  }
 }
 
 @keyframes scroll {
