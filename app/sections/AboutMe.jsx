@@ -20,7 +20,7 @@ const AboutMe = () => {
   return (
     <section ref={targetRef} className="max-container mt-[-20vh]">
       <div className="h-[300vh] w-full">
-        <div className="sticky top-[10vh] overflow-hidden">
+        <div className="sticky top-[10vh] overflow-hidden px-8">
           <Reveal>
             <h2 className="text-4xl font-bold mb-4">A propos de moi</h2>
           </Reveal>
@@ -50,7 +50,7 @@ const AboutMe = () => {
                 </div>
               </div>
               <div className="h-[614px] flex">
-                <div className="w-1/2 flex flex-col">
+                <div className="w-1/2 lg:flex flex-col hidden">
                   <div className="h-96 flex flex-col">
                     <div className="h-16 flex items-end gap-2">
                       <span className="py-2 px-4 bg-darkgray-300 rounded-t-lg leading-none ml-5 mb-0 cursor-pointer">
@@ -100,7 +100,7 @@ const AboutMe = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 flex flex-col border-l border-darkgray-100">
+                <div className="lg:w-1/2 w-full flex flex-col border-l border-darkgray-100">
                   <div className="h-16 border-b border-darkgray-100 flex justify-center relative">
                     <Image
                       src="/Logo.svg"
