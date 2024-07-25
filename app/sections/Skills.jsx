@@ -3,7 +3,7 @@ import IconsSlider from "../../components/IconsSlider";
 import Reveal from "../../components/Reveal";
 const Skills = () => {
   return (
-    <section className="max-container px-8 lg:my-36 mt-20">
+    <section className="max-container px-8 2xl:my-36 mt-20">
       <Reveal>
         <h2 className="text-4xl font-bold mb-4">Mes compétences</h2>
       </Reveal>

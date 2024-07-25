@@ -11,7 +11,7 @@ const AnimationHeroH1 = ({ text, delay = 0.15, startDelay = 0, nameclass }) => {
   const words = text ? text.split(" ") : [];
 
   return (
-    <div className="flex flex-wrap justify-left text-[clamp(2rem,7vw,7rem)] font-bold justify-center ">
+    <div className="flex flex-wrap justify-left text-[clamp(2rem,6vw,7rem)] font-bold justify-center ">
       {words.map((word, i) => (
         <span
           key={i}

@@ -20,7 +20,7 @@ const AboutMe = () => {
   return (
     <section ref={targetRef} className="lg:mt-[-20vh] mt-[-30vh]">
       <div className="h-[300vh] w-full">
-        <div className="sticky lg:top-[10vh] top-[5vh] overflow-hidden max-container px-4 md:px-8">
+        <div className="sticky 2xl:top-[10vh] top-[5vh] overflow-hidden max-container px-4 md:px-8">
           <Reveal>
             <h2 className="text-4xl font-bold mb-4">A propos de moi</h2>
           </Reveal>
@@ -29,7 +29,7 @@ const AboutMe = () => {
               Qui je suis, d'ou je viens et vers ou je vais !
             </p>
           </Reveal>
-          <div className="flex justify-center lg:mt-20 lg:mb-36 mt-10">
+          <div className="flex justify-center 2xl:mt-20 2xl:mb-36 mt-10">
             <div className="flex flex-col w-full bg-darkgray-200 shadow-lg border border-darkgray-100 rounded-2xl">
               <div className="h-16 flex justify-center items-center border-b border-darkgray-100 md:px-0 px-4">
                 <div className="bg-darkgray-300 w-full sm:w-96 h-6 flex justify-center items-center rounded border border-darkgray-100 relative">
@@ -49,9 +49,9 @@ const AboutMe = () => {
                   />
                 </div>
               </div>
-              <div className="h-[614px] flex ">
+              <div className="2xl:h-[614px] h-[500px] flex ">
                 <div className="w-1/2 lg:flex flex-col hidden">
-                  <div className="h-96 flex flex-col">
+                  <div className="2xl:h-96 h-full flex flex-col rounded-bl-2xl overflow-hidden 2xl:rounded-none">
                     <div className="h-16 flex items-end gap-2">
                       <span className="py-2 px-4 bg-darkgray-300 rounded-t-lg leading-none ml-5 mb-0 cursor-pointer">
                         index.html
@@ -82,7 +82,7 @@ const AboutMe = () => {
                       <CodeBlock />
                     </div>
                   </div>
-                  <div className="flex-1 flex flex-col gap-4 p-2 pl-6">
+                  <div className="flex-1 2xl:flex flex-col gap-4 p-2 pl-6 hidden">
                     <ul className="flex gap-5 text-gray-600">
                       <li className="text-white">Terminal</li>
                       <li>Output</li>
@@ -90,8 +90,12 @@ const AboutMe = () => {
                       <li>Problems</li>
                     </ul>
                     <div className="flex flex-col">
-                      <span>Compiled in 160ms (1236 modules)</span>
-                      <span>Compiled in 150ms (1236 modules)</span>
+                      <span className="2xl:flex hidden">
+                        Compiled in 160ms (1236 modules)
+                      </span>
+                      <span className="2xl:flex hidden">
+                        Compiled in 150ms (1236 modules)
+                      </span>
                       <span>Compiled in 134ms (1236 modules)</span>
                       <span>Compiled in 170ms (1236 modules)</span>
                       <span>Compiled in 165ms (1236 modules)</span>

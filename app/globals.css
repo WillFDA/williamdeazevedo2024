@@ -134,10 +134,6 @@ body {
   animation-direction: reverse;
 }
 
-.slide-track:hover {
-  animation-play-state: paused;
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
