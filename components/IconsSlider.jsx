@@ -3,14 +3,17 @@ import Image from "next/image";
 
 const iconData = [
   { src: "/React-icon.png", alt: "React Logo icon" },
-  { src: "/zustand-logo.png", alt: "Zustand Logo icon", width: 70, height: 70 }, // Ajusté
+  {
+    src: "/react-router-mark-color-inverted.png",
+    alt: "React Router Logo icon",
+  }, // Ajusté
   { src: "/next.svg", alt: "Next JS Logo icon", width: 80 },
   { src: "/Tailwind_CSS_Logo.png", alt: "Tailwind CSS Logo icon" },
   { src: "/Typescript_logo.png", alt: "TypeScript Logo Icon" },
   { src: "/Figma_logo.png", alt: "Figma Logo Icon" },
   {
-    src: "/react-router-logo.png",
-    alt: "React Router Logo icon",
+    src: "/Ruby_On_Rails_Logo.png",
+    alt: "Ruby On Rails Logo Icon",
     width: 80,
     height: 50,
   },

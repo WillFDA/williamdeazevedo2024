@@ -1,13 +1,14 @@
 import React from "react";
-import Reveal from "../../components/Reveal";
 import Image from "next/image";
 import Link from "next/link";
+
 const MesProjets = () => {
   const data = [
     {
       title: "Kasa App - Site d'Agence Immobilière",
       description:
         "Grâce à React, SCSS, React Router j'ai crée ce site web pour una agence immobilière fictive lors de mon cursur openClassrooms",
+      short_description: "Site web d'agence immobilière avec React",
       image: "/kasa_app.png",
       tags: ["React", "SCSS", "React Router"],
       links: {
@@ -20,6 +21,7 @@ const MesProjets = () => {
       title: "Petits plats - Développement d'un algorithne de recherche",
       description:
         "En utilisant du HTML avec TailwindCSS pour le front et du Javascript Vanilla , j'ai intégrer un site et développez un algorithme de recherche de recettes de cuisine",
+      short_description: "Algorithme de recherche de recettes",
       image: "/petits_plats.png",
       tags: ["JavaScript", "TailwindCSS"],
       links: {
@@ -32,6 +34,7 @@ const MesProjets = () => {
       title: "Single Page design Portfolio",
       description:
         "Ce projet, créé avec Next.js et Tailwind CSS. est un défi de Front End Mentor que j'ai relevé par exemple en alignant précisément les blocs du Hero et en gérant un slider. Le site est responsive et fidèle au design Figma fourni.",
+      short_description: "Portfolio design avec Next.js et Tailwind",
       image: "/single_page_portfolio.png",
       tags: ["NextJS", "TailwindCSS", "SwiperJS"],
       links: {
@@ -44,6 +47,7 @@ const MesProjets = () => {
       title: "Mon ancien Portfolio",
       description:
         "Crée en utilisant NextJS, SCSS, Framer Motion et TypeScript, ce portfolio est mon ancien site web personnel. Il est responsive et a été un bon moyen de montrer mes compétences en développement web.",
+      short_description: "Ancien portfolio avec NextJS et TypeScript",
       image: "/old_portfolio.png",
       tags: ["NextJS", "TailwindCSS", "Framer-motion", "TypeScript"],
       links: {
@@ -54,49 +58,88 @@ const MesProjets = () => {
     },
   ];
 
+  const largeCards = data.slice(0, 3);
+  const smallCards = data.slice(3, 6);
+
   return (
-    <section className="max-container px-4 sm:px-8 my-24">
+    <section className="max-container px-4 md:px-8 xl:px-16 my-24">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-4">
-        {data.map((project) => {
-          return (
-            <Link
-              key={project.id}
-              href={project.links.externalLink}
-              className="focus group cursor-pointer border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 shadow-sm hover:-translate-y-1 focus:-translate-y-1"
-            >
-              <div className="w-full pb-[66%] bg-gray-100 relative border-b overflow-hidden">
-                <Image
-                  src={project.image}
-                  fill={true}
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "100%",
-                  }}
-                  alt={`Image ${project.title}`}
-                />
+        {largeCards.map((project) => (
+          <Link
+            key={project.id}
+            href={project.links.externalLink}
+            className="focus group cursor-pointer border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 shadow-sm hover:-translate-y-1 focus:-translate-y-1"
+          >
+            <div className="w-full pb-[66%] bg-gray-100 relative border-b overflow-hidden">
+              <Image
+                src={project.image}
+                fill={true}
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%",
+                }}
+                alt={`Image ${project.title}`}
+              />
+            </div>
+            <div className="flex flex-1 flex-col justify-between">
+              <div className="p-4 pb-0">
+                <h3 className="font-bold text-lg">{project.title}</h3>
+                <p className="text-sm mt-3 text-gray-400">
+                  {project.description}
+                </p>
               </div>
-              <div className="flex flex-1 flex-col justify-between">
-                <div className="p-4 pb-0">
-                  <h3 className="font-bold text-lg">{project.title}</h3>
-                  <p className="text-sm mt-3 text-gray-400">
-                    {project.description}
-                  </p>
-                </div>
-                <div className="flex p-4 flex-wrap gap-4 text-sm">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="bg-white text-darkgray-100 px-3 py-1 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              <div className="flex p-4 flex-wrap gap-4 text-sm">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="bg-white text-darkgray-100 px-3 py-1 rounded"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
-            </Link>
-          );
-        })}
+            </div>
+          </Link>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 mt-4 gap-8">
+        {smallCards.map((project) => (
+          <Link
+            key={project.id}
+            href={project.links.externalLink}
+            className="focus group border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 hidden md:flex"
+          >
+            <div className="flex flex-1 flex-col justify-between">
+              <div className="p-4 pb-0">
+                <h3 className="font-bold text-lg">{project.title}</h3>
+                <p className="text-sm mt-3 text-gray-400">
+                  {project.short_description}
+                </p>
+              </div>
+              <div className="flex p-4 flex-wrap gap-2 text-sm">
+                {project.tags.slice(0, 3).map((tag) => (
+                  <span
+                    key={tag}
+                    className="bg-white text-darkgray-300 px-2 py-1 rounded"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </Link>
+        ))}
+        <div className="flex flex-col items-center justify-center text-center py-4">
+          <h3 className="font-bold text-lg text-white">Envie de voir plus ?</h3>
+          <p className="text-gray-500"> Explorez mon github</p>
+          <Link
+            href="https://github.com/WillFDA"
+            className="mt-3 bg-white hover:bg-gray-200 text-darkgray-200 py-1 px-6 rounded-md"
+          >
+            Mon github
+          </Link>
+        </div>
       </div>
     </section>
   );

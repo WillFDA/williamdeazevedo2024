@@ -27,7 +27,7 @@ body {
 }
 
 .max-container {
-  @apply mx-auto max-w-[1440px] z-10;
+  @apply mx-auto max-w-screen-xl z-10;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
@@ -49,7 +49,7 @@ body {
 }
 
 .pill {
-  @apply px-4 py-1 text-lg border rounded-full leading-none list-none;
+  @apply px-4 py-1 text-base border rounded-full leading-none list-none;
 }
 
 .pl-ent {
