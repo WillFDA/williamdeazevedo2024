@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section className="max-container px-4 sm:px-8 2xl:my-36 mt-20">
       <Reveal>
-        <h2 className="md:text-4xl text-2xl font-bold mb-4">Mes compétences</h2>
+        <h2 className="md:text-3xl text-2xl font-bold mb-4">Mes compétences</h2>
       </Reveal>
       <Reveal>
         <p className="text-base md:text-xl text-gray-400">

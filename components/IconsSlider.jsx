@@ -19,7 +19,7 @@ const iconData = [
   },
   { src: "/react-query-logo.png", alt: "React Query Logo icon", width: 80 },
   { src: "/Redux_logo.png", alt: "Redux toolkit Logo icon" },
-  { src: "/Javascript-logo.png", alt: "Javascript Logo Icon" },
+  { src: "/js-logo.png", alt: "Javascript Logo Icon" },
 ];
 
 const SliderItem = ({ src, alt, width = 70, height = 70 }) => (

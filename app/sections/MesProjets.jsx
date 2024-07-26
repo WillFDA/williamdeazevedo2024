@@ -10,15 +10,15 @@ const MesProjets = () => {
       description:
         "Durant mon alternance, j'ai contribué au développement d'un SaaS en utilisant Ruby on Rails, Tailwind CSS et SCSS. J'ai dû m'adapter rapidement à cette stack technologique et j'ai participé à l'intégration de nouvelles interfaces pour améliorer l'expérience utilisateur de la plateforme.",
       short_description:
-        "Développement SaaS avec Ruby on Rails et Tailwind CSS",
-      image: "/komin_io.png",
+        "Développement SaaS avec Ruby on Rails et Tailwind CSS pendant mon alternance",
+      image: "/komin.png",
       tags: [
         { title: "Ruby on Rails", style: "bg-red-800 text-red-300" },
         { title: "Tailwind CSS", style: "bg-blue-800 text-blue-300" },
         { title: "SCSS", style: "bg-purple-800 text-purple-300" },
       ],
       links: {
-        externalLink: "https://pro.komin.io/users/sign_in",
+        externalLink: "https://www.komin.io/",
         github: "",
       },
       id: "komin_io",
@@ -138,10 +138,12 @@ const MesProjets = () => {
                 </p>
               </div>
               <div className="flex p-4 flex-wrap gap-4 text-sm">
-                {project.tags.map((tag) => (
+                {project.tags.map((tag, index) => (
                   <span
                     key={tag.title}
-                    className={`px-3 py-1 rounded ${tag.style}`}
+                    className={`px-3 py-1 rounded ${
+                      index > 1 ? "sm:hidden lg:block" : ""
+                    } ${tag.style}`}
                   >
                     {tag.title}
                   </span>
@@ -166,10 +168,12 @@ const MesProjets = () => {
                 </p>
               </div>
               <div className="flex p-4 flex-wrap gap-2 text-sm">
-                {project.tags.slice(0, 3).map((tag) => (
+                {project.tags.slice(0, 3).map((tag, index) => (
                   <span
                     key={tag.title}
-                    className={`px-2 py-1 rounded ${tag.style}`}
+                    className={`px-2 py-1 rounded ${
+                      index > 1 ? "sm:hidden lg:block" : ""
+                    } ${tag.style}`}
                   >
                     {tag.title}
                   </span>

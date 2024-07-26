@@ -22,7 +22,7 @@ const AboutMe = () => {
       <div className="h-[600vh] md:h-[300vh] 2xl:h-[400vh] w-full">
         <div className="sticky 2xl:top-[10vh] top-[5vh] overflow-hidden max-container px-4 md:px-8 xl:px-16">
           <Reveal>
-            <h2 className="md:text-4xl text-2xl font-bold mb-4">
+            <h2 className="md:text-3xl text-2xl font-bold mb-4">
               A propos de moi
             </h2>
           </Reveal>
@@ -51,9 +51,9 @@ const AboutMe = () => {
                   />
                 </div>
               </div>
-              <div className="md:h-[614px] h-[500px] flex ">
+              <div className="h-[514px] flex ">
                 <div className="w-1/2 lg:flex flex-col hidden">
-                  <div className="2xl:h-96 h-full flex flex-col overflow-hidden 2xl:rounded-none">
+                  <div className="xl:h-96 h-full flex flex-col overflow-hidden 2xl:rounded-none">
                     <div className="h-16 flex items-end gap-2">
                       <span className="py-2 px-4 bg-darkgray-300 rounded-t-lg leading-none ml-5 mb-0 cursor-pointer">
                         index.html
