@@ -22,15 +22,17 @@ const AboutMe = () => {
       <div className="h-[600vh] md:h-[300vh] 2xl:h-[400vh] w-full">
         <div className="sticky 2xl:top-[10vh] top-[5vh] overflow-hidden max-container px-4 md:px-8 xl:px-16">
           <Reveal>
-            <h2 className="text-4xl font-bold mb-4">A propos de moi</h2>
+            <h2 className="md:text-4xl text-2xl font-bold mb-4">
+              A propos de moi
+            </h2>
           </Reveal>
           <Reveal>
-            <p className="text-xl text-gray-400">
+            <p className="text-base md:text-xl text-gray-400">
               Qui je suis, d'ou je viens et vers ou je vais !
             </p>
           </Reveal>
           <div className="flex justify-center 2xl:mt-20 2xl:mb-36 mt-10">
-            <div className="flex flex-col w-full bg-darkgray-200 shadow-lg border border-darkgray-100 rounded-2xl">
+            <div className="flex flex-col w-full h-full bg-darkgray-200 shadow-lg border border-darkgray-100 rounded-2xl">
               <div className="h-16 flex justify-center items-center border-b border-darkgray-100 md:px-0 px-4">
                 <div className="bg-darkgray-300 w-full sm:w-96 h-6 flex justify-center items-center rounded border border-darkgray-100 relative">
                   <span className="text-xs">william-portfolio-picture.dev</span>
@@ -49,7 +51,7 @@ const AboutMe = () => {
                   />
                 </div>
               </div>
-              <div className="2xl:h-[614px] h-[500px] flex ">
+              <div className="md:h-[614px] h-[500px] flex ">
                 <div className="w-1/2 lg:flex flex-col hidden">
                   <div className="2xl:h-96 h-full flex flex-col overflow-hidden 2xl:rounded-none">
                     <div className="h-16 flex items-end gap-2">
@@ -138,6 +140,7 @@ const AboutMe = () => {
                       className="absolute inset-0 flex justify-center items-center"
                     >
                       <Image
+                        className="w-[300px] md:w-[400px]"
                         src="/picture.png"
                         width={400}
                         height={400}
