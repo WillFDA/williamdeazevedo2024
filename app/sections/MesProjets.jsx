@@ -1,6 +1,4 @@
-import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const MesProjets = () => {
   const data = [
@@ -35,7 +33,7 @@ const MesProjets = () => {
         { title: "TailwindCSS", style: "bg-cyan-800 text-cyan-300" },
       ],
       links: {
-        externalLink: "https://willfda.github.io/OC-petitplat/",
+        externalLink: "https://willfda.github.io/OC-petitsplats/",
         github: "https://github.com/WillFDA/petits_plats",
       },
       id: "petits_plats",
@@ -54,7 +52,7 @@ const MesProjets = () => {
         { title: "TypeScript", style: "bg-cyan-800 text-cyan-300" },
       ],
       links: {
-        externalLink: "https://willfda.github.io/old_portfolio/",
+        externalLink: "https://william-portfolio-old.netlify.app/",
         github: "https://github.com/WillFDA/old_portfolio",
       },
       id: "old_portfolio",
@@ -105,9 +103,10 @@ const MesProjets = () => {
     <section className="max-container px-4 md:px-8 xl:px-16 my-24">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-4">
         {largeCards.map((project) => (
-          <Link
+          <a
             key={project.id}
             href={project.links.externalLink}
+            target="_blank"
             className="focus group cursor-pointer border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 shadow-sm hover:-translate-y-1 focus:-translate-y-1"
           >
             <div className="w-full pb-[66%] bg-gray-100 relative border-b overflow-hidden">
@@ -150,12 +149,13 @@ const MesProjets = () => {
                 ))}
               </div>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 mt-8 gap-8">
         {smallCards.map((project) => (
-          <Link
+          <a
+            target="_blank"
             key={project.id}
             href={project.links.externalLink}
             className="focus group border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 hidden md:flex"
@@ -180,17 +180,18 @@ const MesProjets = () => {
                 ))}
               </div>
             </div>
-          </Link>
+          </a>
         ))}
         <div className="flex flex-col items-center justify-center text-center py-4">
           <h3 className="font-bold text-lg text-white">Envie de voir plus ?</h3>
           <p className="text-gray-500"> Explorez mon github</p>
-          <Link
+          <a
+            target="_blank"
             href="https://github.com/WillFDA"
             className="mt-3 bg-white hover:bg-gray-200 text-darkgray-200 py-1 px-6 rounded-md"
           >
             Mon github
-          </Link>
+          </a>
         </div>
       </div>
     </section>
