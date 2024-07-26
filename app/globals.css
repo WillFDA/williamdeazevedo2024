@@ -183,3 +183,11 @@ body {
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
+
+/* tippy-custom.css */
+.tippy-box[data-theme~="custom"] {
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  padding: 2px 12px;
+}

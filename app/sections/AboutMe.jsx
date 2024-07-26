@@ -19,7 +19,7 @@ const AboutMe = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
   return (
     <section ref={targetRef} className="lg:mt-[-20vh] mt-[-30vh]">
-      <div className="h-[600vh] md:h-[300vh] 2xl:h-[400vh] w-full">
+      <div className="h-[700vh] md:h-[400vh] 2xl:h-[400vh] w-full">
         <div className="sticky 2xl:top-[10vh] top-[5vh] overflow-hidden max-container px-4 md:px-8 xl:px-16">
           <Reveal>
             <h2 className="md:text-3xl text-2xl font-bold mb-4">

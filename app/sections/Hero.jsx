@@ -29,7 +29,7 @@ const Hero = () => {
           position: position,
           filter: useTransform(blur, (value) => `blur(${value}px)`),
         }}
-        className="fixed bottom-[60%] lg:bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2 lg:pb-12 w-full max-container md:px-0 px-4"
+        className="fixed bottom-[60%] lg:bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2 w-full max-container md:px-0 px-4"
       >
         <Logo delay="0.2" />
         <AnimationHeroH1

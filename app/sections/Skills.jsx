@@ -16,7 +16,7 @@ const Skills = () => {
       <div className="lg:mt-36 mt-16 flex flex-col gap-8">
         <IconsSlider />
       </div>
-      <div className="flex gap-8 justify-center mt-36 flex-wrap">
+      <div className="flex gap-8 justify-center mt-20 lg:mt-36 flex-wrap">
         <AnimatedPills />
       </div>
     </section>
