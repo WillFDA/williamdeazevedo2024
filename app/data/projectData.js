@@ -37,6 +37,26 @@ export const projectData = [
   },
 
   {
+    title: "Arch Studio - En cours ...",
+    short_title: "Arch Studio",
+    description:
+      "Projet en cours basé sur un challenge Front-End Mentor. Développé avec Next.js, ce site utilise les routes Next.js et maximise le rendu côté serveur. À venir : animations Framer Motion et slider Swiper.js sur la homepage.",
+    short_description:
+      "Challenge Front-End Mentor en cours avec Next.js et server-side rendering",
+    image: "/arch_studio.png", // Assurez-vous d'avoir une image appropriée
+    tags: [
+      { title: "Next.js", style: "bg-darkgray-200 text-white" },
+      { title: "TailwindCSS", style: "bg-cyan-800 text-cyan-300" },
+      { title: "Framer Motion", style: "bg-pink-800 text-pink-300" },
+      { title: "Swiper.js", style: "bg-yellow-800 text-yellow-100" },
+    ],
+    links: {
+      externalLink: "https://archstudiowilliam.netlify.app/",
+      github: "", // Ajoutez le lien GitHub quand il sera disponible
+    },
+    id: "arch_studio",
+  },
+  {
     title: "Mon ancien Portfolio",
     short_title: "Ancien Portfolio",
     description:
@@ -69,7 +89,7 @@ export const projectData = [
       { title: "React Router", style: "bg-red-800 text-red-300" },
     ],
     links: {
-      externalLink: "https://willfda.github.io/kasa_app/",
+      externalLink: "https://william-kasaapp.netlify.app/",
       github: "https://github.com/WillFDA/kasa_app",
     },
     id: "kasa_app",
