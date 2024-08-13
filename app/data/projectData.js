@@ -35,6 +35,7 @@ export const projectData = [
     },
     id: "petits_plats",
   },
+
   {
     title: "Arch Studio - En cours ...",
     short_title: "Arch Studio",
