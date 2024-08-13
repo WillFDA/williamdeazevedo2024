@@ -5,7 +5,7 @@ import AnimatedCard from "../../components/AnimatedCard";
 
 const MesProjets = () => {
   const largeCards = data.slice(0, 3);
-  const smallCards = data.slice(3, 5);
+  const smallCards = data.slice(3, 6);
 
   return (
     <section className="max-container px-4 md:px-8 xl:px-16 my-24">
