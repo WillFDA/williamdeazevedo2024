@@ -4,7 +4,7 @@ export default function ButtonCV() {
       href="/CV_William_De_Azevedo.pdf"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-main-200 text-white px-6 py-3 rounded-md shadow-md hover:bg-main-300"
+      className=" bg-darkgray-200 hover:bg-opacity-50 text-white px-8 py-4 rounded-full shadow-md mx-auto my-12"
     >
       Télécharger mon CV
     </a>
