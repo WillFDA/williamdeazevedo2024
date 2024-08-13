@@ -35,6 +35,7 @@ export const projectData = [
     },
     id: "petits_plats",
   },
+
   {
     title: "Mon ancien Portfolio",
     short_title: "Ancien Portfolio",
