@@ -9,14 +9,14 @@ export const projectData = [
     image: "/komin.png",
     tags: [
       { title: "Ruby on Rails", style: "bg-red-800 text-red-300" },
-      { title: "Tailwind CSS", style: "bg-blue-800 text-blue-300" },
+      { title: "Tailwind CSS", style: "bg-cyan-800 text-cyan-300" },
       { title: "SCSS", style: "bg-purple-800 text-purple-300" },
     ],
     links: {
       externalLink: "https://www.komin.io/",
       github: "",
     },
-    id: "komin_io",
+    id: "kominio",
   },
   {
     title: "Petits plats - Développement d'un algorithme de recherche",
@@ -33,7 +33,7 @@ export const projectData = [
       externalLink: "https://oc-petitplat.netlify.app/",
       github: "https://github.com/WillFDA/petits_plats",
     },
-    id: "petits_plats",
+    id: "petitsplats",
   },
   {
     title: "Arch Studio - En cours ...",
@@ -53,7 +53,7 @@ export const projectData = [
       externalLink: "https://archstudiowilliam.netlify.app/",
       github: "", // Ajoutez le lien GitHub quand il sera disponible
     },
-    id: "arch_studio",
+    id: "archstudio",
   },
   {
     title: "Mon ancien Portfolio",
@@ -72,7 +72,7 @@ export const projectData = [
       externalLink: "https://william-portfolio-old.netlify.app/",
       github: "https://github.com/WillFDA/old_portfolio",
     },
-    id: "old_portfolio",
+    id: "oldportfolio",
   },
   {
     title: "Kasa App - Site d'Agence Immobilière",
@@ -91,7 +91,7 @@ export const projectData = [
       externalLink: "https://william-kasaapp.netlify.app/",
       github: "https://github.com/WillFDA/kasa_app",
     },
-    id: "kasa_app",
+    id: "kasaapp",
   },
   {
     title: "Single Page design Portfolio",
@@ -109,6 +109,6 @@ export const projectData = [
       externalLink: "https://willfda.github.io/single_page_portfolio/",
       github: "https://github.com/WillFDA/single_page_portfolio",
     },
-    id: "single_portfolio",
+    id: "singleportfolio",
   },
 ];

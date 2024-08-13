@@ -1,11 +1,10 @@
 import AnimatedCard from "./AnimatedCard";
-
+import Link from "next/link";
 const SmallProjectCard = ({ project }) => (
   <AnimatedCard>
-    <a
-      target="_blank"
+    <Link
+      href={`/projet/${project.id}`}
       rel="noopener noreferrer"
-      href={project.links.externalLink}
       className="focus group border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 hidden md:flex"
     >
       <div className="flex flex-1 flex-col justify-between">
@@ -28,7 +27,7 @@ const SmallProjectCard = ({ project }) => (
           ))}
         </div>
       </div>
-    </a>
+    </Link>
   </AnimatedCard>
 );
 
