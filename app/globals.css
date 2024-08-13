@@ -138,11 +138,6 @@ body {
   animation-direction: reverse;
 }
 
-.slider:hover .slider-track,
-.slider:hover .slider-track-2 {
-  animation-play-state: paused;
-}
-
 @media screen and (min-width: 1024px) {
   .slider-item {
     width: 128px;

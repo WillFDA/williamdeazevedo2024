@@ -51,8 +51,8 @@ const Hero = () => {
           nameclass="text-white"
         />
         <p className="text-center mt-12 text-xl">
-          Autodidacte de 26 ans, je suis passioné par le développement <br />{" "}
-          web, le design et l'accessibilité depuis 10 ans.
+          Autodidacte de 25 ans, je suis passioné par le développement <br />{" "}
+          web, le design et l'accessibilité depuis mes 16 ans
         </p>
       </motion.div>
     </motion.section>

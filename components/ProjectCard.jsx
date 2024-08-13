@@ -1,10 +1,11 @@
 import Image from "next/image";
 import AnimatedCard from "./AnimatedCard";
-import Link from "next/link";
+
 const ProjectCard = ({ project }) => (
   <AnimatedCard>
-    <Link
-      href={`/projet/${project.id}`}
+    <a
+      href={project.links.externalLink}
+      target="_blank"
       rel="noopener noreferrer"
       className="focus group cursor-pointer border border-gray-700 bg-darkgray-300 rounded-md overflow-hidden flex flex-col transform transition-transform ease-in-out duration-100 hover:border-gray-500 shadow-sm hover:-translate-y-1 focus:-translate-y-1"
     >
@@ -42,7 +43,7 @@ const ProjectCard = ({ project }) => (
           ))}
         </div>
       </div>
-    </Link>
+    </a>
   </AnimatedCard>
 );
 
