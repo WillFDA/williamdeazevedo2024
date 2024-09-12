@@ -1,5 +1,6 @@
 import "./globals.css";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 export const metadata = {
   title: "William De Azevedo",
   description: "Développeur Front-end Javascript React",
@@ -35,7 +36,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+        <Analytics />
+      </body>
     </html>
   );
 }
