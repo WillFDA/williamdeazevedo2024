@@ -1,6 +1,7 @@
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+
 export const metadata = {
   title: "William De Azevedo",
   description: "Développeur Front-end Javascript React",

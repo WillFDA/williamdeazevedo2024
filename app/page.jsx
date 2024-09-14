@@ -4,6 +4,7 @@ import MesProjets from "@/app/sections/MesProjets";
 import Skills from "@/app/sections/Skills";
 import Image from "next/image";
 import Footer from "@/app/sections/Footer";
+import NewHero from "@/app/sections/NewHero";
 export default function Home() {
   return (
     <>
@@ -14,8 +15,9 @@ export default function Home() {
         height={1395}
         style={{ position: "absolute", top: "0", zIndex: "-1" }}
       />
-      <Hero />
-      <AboutMe />
+      <NewHero />
+      {/* <Hero /> */}
+      {/* <AboutMe /> */}
       <Skills />
       <MesProjets />
       <Footer />
