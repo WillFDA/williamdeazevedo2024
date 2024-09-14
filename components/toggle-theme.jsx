@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
 
-export const ToggleTheme = () => {
+const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
   const handleClick = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -19,3 +19,4 @@ export const ToggleTheme = () => {
     </Button>
   );
 };
+export default ToggleTheme;

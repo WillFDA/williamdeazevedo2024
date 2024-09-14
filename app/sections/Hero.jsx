@@ -1,4 +1,5 @@
 import Logo from "../../components/logo";
+import ToggleTheme from "@/components/toggle-theme";
 export default function Hero() {
   return (
     <>

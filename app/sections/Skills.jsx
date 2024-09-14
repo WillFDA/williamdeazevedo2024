@@ -1,5 +1,5 @@
 import AnimatedPills from "../../components/animated-pills";
-import IconsSlider from "../../components/IconsSlider";
+import IconsSlider from "../../components/icon-slider";
 import Reveal from "../../components/reveal";
 const Skills = () => {
   return (
