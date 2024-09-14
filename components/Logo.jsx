@@ -27,7 +27,6 @@ const logoVariants = (delay) => ({
 export default function Logo() {
   return (
     <motion.svg
-      // Removed key={theme} as theme is not defined
       variants={logoVariants(0.5)}
       initial="hidden"
       animate="visible"
