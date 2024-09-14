@@ -1,5 +1,5 @@
 import { iconData } from "./../app/data/iconData";
-import SliderItem from "./SliderItem";
+import SliderItem from "./slider-item";
 
 const IconsSlider = () => {
   const firstSliderIcons = iconData.slice(0, 5);

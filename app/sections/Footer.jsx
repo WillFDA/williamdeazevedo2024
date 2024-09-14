@@ -1,4 +1,4 @@
-import ButtonCV from "@/components/ButtonCV";
+import ButtonCV from "@/components/button-cv";
 export default function Footer() {
   return (
     <>

@@ -1,7 +1,7 @@
 import { projectData as data } from "../data/projectData";
-import ProjectCard from "../../components/ProjectCard";
-import SmallProjectCard from "../../components/SmallProjectCard";
-import AnimatedCard from "../../components/AnimatedCard";
+import ProjectCard from "../../components/project-card";
+import SmallProjectCard from "../../components/small-project-card";
+import AnimatedCard from "../../components/animated-card";
 
 const MesProjets = () => {
   const largeCards = data.slice(0, 3);

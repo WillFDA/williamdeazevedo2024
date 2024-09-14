@@ -1,6 +1,6 @@
-import AnimatedPills from "../../components/AnimatedPills";
+import AnimatedPills from "../../components/animated-pills";
 import IconsSlider from "../../components/IconsSlider";
-import Reveal from "../../components/Reveal";
+import Reveal from "../../components/reveal";
 const Skills = () => {
   return (
     <section className="max-container px-4 sm:px-8 2xl:my-36 mt-20">

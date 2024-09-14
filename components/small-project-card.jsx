@@ -1,4 +1,4 @@
-import AnimatedCard from "./AnimatedCard";
+import AnimatedCard from "./animated-card";
 
 const SmallProjectCard = ({ project }) => (
   <AnimatedCard>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AnimatedCard from "./AnimatedCard";
+import AnimatedCard from "./animated-card";
 
 const ProjectCard = ({ project }) => (
   <AnimatedCard>
