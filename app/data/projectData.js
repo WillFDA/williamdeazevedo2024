@@ -1,22 +1,24 @@
 export const projectData = [
   {
-    title: "Komin.io - Développement SaaS en alternance",
-    short_title: "Komin.io",
+    title: "Motivia - Développement d'un SaaS",
+    short_title: "Motivia",
     description:
-      "Durant mon alternance, j'ai contribué au développement d'un SaaS en utilisant Ruby on Rails, Tailwind CSS et SCSS. J'ai dû m'adapter rapidement à cette stack technologique et j'ai participé à l'intégration de nouvelles interfaces pour améliorer l'expérience utilisateur de la plateforme.",
+      "Motivai est un side project full stack que j'ai développé avec NextJS, TypeScript, Prisma, Tailwind CSS v4 et Shadcn. L'application permet de générer des lettres de motivation personnalisées grâce à l'intelligence artificielle, en s'appuyant sur plusieurs modèles comme GPT, Claude, Gemini ou Grok via le Vercel AI SDK.",
     short_description:
-      "Développement SaaS avec Ruby on Rails et Tailwind CSS pendant mon alternance",
-    image: "/komin.png",
+      "Génération de lettres de motivation avec NextJS, TypeScript, Prisma et IA (GPT, Claude)",
+    image: "/motivia.png",
     tags: [
-      { title: "Ruby on Rails", style: "bg-red-800 text-red-300" },
+      { title: "NextJS", style: "bg-gray-800 text-gray-300" },
       { title: "Tailwind CSS", style: "bg-blue-800 text-blue-300" },
-      { title: "SCSS", style: "bg-purple-800 text-purple-300" },
+      { title: "TypeScript", style: "bg-cyan-800 text-cyan-300" },
+      { title: "Prisma", style: "bg-green-800 text-green-300" },
+      { title: "Vercel AI SDK", style: "bg-yellow-800 text-yellow-300" },
     ],
     links: {
-      externalLink: "https://www.komin.io/",
-      github: "",
+      externalLink: "https://motivai.fr",
+      github: "https://github.com/WillFDA/motivia",
     },
-    id: "komin_io",
+    id: "motivia",
   },
   {
     title: "Petits plats - Développement d'un algorithme de recherche",

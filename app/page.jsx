@@ -1,9 +1,9 @@
 import AboutMe from "@/app/sections/AboutMe";
+import Footer from "@/app/sections/Footer";
 import Hero from "@/app/sections/Hero";
 import MesProjets from "@/app/sections/MesProjets";
 import Skills from "@/app/sections/Skills";
 import Image from "next/image";
-import Footer from "@/app/sections/Footer";
 export default function Home() {
   return (
     <>
@@ -15,9 +15,9 @@ export default function Home() {
         style={{ position: "absolute", top: "0", zIndex: "-1" }}
       />
       <Hero />
-      <AboutMe />
-      <Skills />
       <MesProjets />
+      <Skills />
+      <AboutMe />
       <Footer />
     </>
   );
